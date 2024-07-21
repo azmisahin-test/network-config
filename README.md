@@ -26,6 +26,8 @@ Clone this repository:
    sudo chmod 600 /etc/netplan/01-netcfg.yaml
    ```
 
+   NOTE: If there is any plan please delete it
+
 3. Apply the Netplan configuration:
 
    ```bash
