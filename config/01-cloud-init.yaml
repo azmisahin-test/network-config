@@ -1,0 +1,18 @@
+#cloud-config
+hostname: my-vm
+manage_etc_hosts: true
+
+package_update: true
+package_upgrade: true
+packages:
+  - net-tools
+  - vim
+  - nano
+
+runcmd:
+  - echo "Hello from cloud-init" > /etc/motd
+  - curl -o /etc/netplan/01-netcfg.yaml https://raw.githubusercontent.com/azmisahin-test/network-config/main/config/01-netcfg.yaml
+  - chmod 600 /etc/netplan/01-netcfg.yaml
+  - netplan apply
+
+ssh_pwauth: true

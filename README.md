@@ -8,8 +8,22 @@ This repository contains Netplan configuration files used for managing static IP
 - Static IP address settings
 - Simple installation and configuration
 
-## Installation
+## Installation with multipass
 
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/azmisahin-test/network-config.git
+   cd network-config
+   ```
+
+2. Run
+
+   ```bash
+   multipass launch --name my-vm --cloud-init config/01-cloud-init.yaml
+   ```
+
+## Installation on linux
 Clone this repository:
 
 1. Clone this repository:
