@@ -25,7 +25,7 @@ Clone this repository:
 
    ```bash
    sudo rm /etc/netplan/*
-   ```   
+   ```
 
    ```bash
    sudo cp config/01-netcfg.yaml /etc/netplan/
@@ -36,6 +36,18 @@ Clone this repository:
 
    ```bash
    sudo netplan apply
+   ```
+
+4. Check
+
+   ```bash
+   ip a
+   ```
+
+5. Test
+
+   ```bash
+   ping 8.8.8.8
    ```
 
 ## Usage
