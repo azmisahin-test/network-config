@@ -4,10 +4,10 @@ network:
     eth0:
       dhcp4: no
       addresses:
-        - 172.19.112.10/20
+        - 172.30.29.136/24
       routes:
         - to: default
-          via: 172.19.112.1
+          via: 172.30.29.1
       nameservers:
         addresses:
           - 8.8.8.8
