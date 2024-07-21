@@ -5,7 +5,9 @@ network:
       dhcp4: no
       addresses:
         - 172.19.112.10/20
-      gateway4: 172.19.112.1
+      routes:
+        - to: default
+          via: 172.19.112.1
       nameservers:
         addresses:
           - 8.8.8.8

@@ -16,12 +16,14 @@ Clone this repository:
 
    ```bash
    git clone https://github.com/azmisahin-test/network-config.git
+   cd network-config
    ```
 
 2. Copy the configuration files to the appropriate directories:
 
    ```bash
-   cp config/01-netcfg.yaml /etc/netplan/
+   sudo cp config/01-netcfg.yaml /etc/netplan/
+   sudo chmod 600 /etc/netplan/01-netcfg.yaml
    ```
 
 3. Apply the Netplan configuration:
